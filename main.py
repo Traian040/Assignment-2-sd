@@ -1,3 +1,5 @@
+import os
+
 from core import Workflow, Orchestrator, Event
 from services import (
     IngestService,
@@ -28,6 +30,10 @@ def main():
     #vid 1 - drinking game 34.7 Mb
     #vid 2 - i could do that 3.99 Mb
     #vid 3 - she gave me three 27.57 Mb
+    if os.path.exists(orchestrator.context["input_file"]):
+        print(f"File '{orchestrator.context['input_file']}' already processed. Check for naming conflicts!")
+        return
+
     orchestrator.context["base_path"] = orchestrator.context["input_file"].split(".",1)[0]
 
     orchestrator.start_pipeline()
