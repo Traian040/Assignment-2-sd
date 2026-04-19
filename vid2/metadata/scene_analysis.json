@@ -1,0 +1,23 @@
+{
+    "source": "vid2.mp4",
+    "intro_end": 5.2,
+    "credits_start": 25.4,
+    "scene_indexer": [
+        {
+            "timestamp": 0.0,
+            "type": "establishing_shot"
+        },
+        {
+            "timestamp": 5.2,
+            "type": "dialogue"
+        },
+        {
+            "timestamp": 12.1,
+            "type": "action"
+        },
+        {
+            "timestamp": 25.4,
+            "type": "credits"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "bundle_id": "vid2",
+    "status": "COMPLETED",
+    "assets": {
+        "video_formats": [
+            "h264/mp4",
+            "vp9/webm",
+            "hevc/mkv"
+        ],
+        "resolutions": [
+            "4k",
+            "1080p",
+            "720p"
+        ],
+        "localization": {
+            "transcript": "text/source_transcript.txt",
+            "translation": "text/ro_translation.txt",
+            "audio_dub": "audio/ro_dub_synthetic.aac"
+        },
+        "metadata": "metadata/scene_analysis.json"
+    },
+    "security": "DRM Encrypted"
+}
